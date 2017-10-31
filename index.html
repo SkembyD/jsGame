@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  </head>
+  <body>
+    <button class="resetButton" data-action="reset">Reset</button>
+<section data-state="optionScreen" class="gameScreens hidden">
+  <h2>Madness</h2>
+  <h3>Options :</h3>
+<label for="x">Number of cases on the X axis</label>
+<input id="x" type="number" name="x" value="10">
+<label for="y">Number of cases on the Y axis</label>
+<input id="y" type="number" name="y" value="10">
+<button data-action="startGame">Start Game</button>
+</section>
+<section data-state="playScreen" class="gameScreens hidden"></section>
+<section data-state="victory" class="gameScreens hidden"><h3>Well Play !</h3>
+</section>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+</html>

@@ -1,0 +1,69 @@
+body{
+  background-image: url("../images/blackBack.png");
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.gameScreens{
+  background-color: lightgray;
+  width: 60vw;
+  height: 60vh;
+}
+.hidden{
+  display: none!important;
+}
+.resetButton{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+section[data-state="optionScreen"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section[data-state="optionScreen"] h2 {
+  font-size: 55px;
+  font-family: 'Gloria Hallelujah', cursive;
+  margin-top:0;
+  margin-bottom: 60px;
+  color: red;
+}
+section[data-state="optionScreen"] h3 {
+  font-size: 25px;
+  font-family: 'Gloria Hallelujah', cursive;
+  margin-top:0;
+  margin-bottom: 20px;
+  color: red;
+}
+section[data-state="optionScreen"] input {
+  width: 70px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+section[data-state="optionScreen"] label{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+section[data-state="optionScreen"] button {
+  margin-top: 15px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+section[data-state="playScreen"] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.gameDiv{
+  height: 35px;
+  width: 35px;
+  border: 1px solid white;
+}
+.gameContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
